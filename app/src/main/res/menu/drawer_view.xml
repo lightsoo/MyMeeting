@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_fragment"
+            android:icon="@drawable/ic_one"
+            android:title="홈!!!" />
+
+        <item
+            android:id="@+id/nav_message_fragment"
+            android:icon="@drawable/ic_two"
+            android:title="메시지" />
+        <item
+            android:id="@+id/nav_like_frgment"
+            android:icon="@drawable/ic_three"
+            android:title="좋아요"></item>
+
+    </group>
+
+    <item android:title="Sub items">
+        <menu>
+            <item
+                android:id="@+id/nav_chatting_fragment"
+                android:icon="@drawable/ic_two"
+                android:title="채팅" />
+
+            <item
+                android:title="test!!!"
+                android:id="@+id/nav_test">
+            </item>
+        </menu>
+    </item>
+
+
+</menu>
