@@ -5,7 +5,18 @@
     <!-- 네트워크-->
     <!--<uses-permission android:name="android.permission.INTERNET"/>-->
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <!-- Sharedpreference-->
+    <!-- Sharedpreference + 사진 저장및 파일경로 확인-->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+
+
+    <!-- 카메라 H/W접근권한-->
+    <uses-feature android:name="android.hardware.Camera"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <!-- 화질에 영향이 미쳐-->
+    <uses-feature android:name="android.hardware.Camera.autofocus"></uses-feature>
 
     <application
         android:name=".MyApplication"

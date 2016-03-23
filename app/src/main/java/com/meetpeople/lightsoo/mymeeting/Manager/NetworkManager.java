@@ -1,14 +1,10 @@
 package com.meetpeople.lightsoo.mymeeting.Manager;
 
-import android.util.Log;
-
-import java.io.IOException;
-import java.util.HashSet;
-
 import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+
+import java.io.IOException;
 
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit.GsonConverterFactory;
@@ -20,8 +16,8 @@ import retrofit.Retrofit;
 public class NetworkManager {
     // where my server lives.
 //    private static final String serverURL ="http://172.30.2.30:3000/";
-    private static final String serverURL ="http://192.168.0.17:3000/";
-//    private static final String serverURL ="http://127.0.0.1:3000/";
+    private static final String serverURL ="http://52.192.180.38:3000/";
+    //    private static final String serverURL ="http://127.0.0.1:3000/";
     Retrofit client;
 
     HttpLoggingInterceptor logging = new HttpLoggingInterceptor();

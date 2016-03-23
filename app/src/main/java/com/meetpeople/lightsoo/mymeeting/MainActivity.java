@@ -6,25 +6,19 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.meetpeople.lightsoo.mymeeting.Activity.MovieActivity;
-import com.meetpeople.lightsoo.mymeeting.CommonAdapter.HomeAdapter;
 import com.meetpeople.lightsoo.mymeeting.Dialog.FilterDialogFragment;
 import com.meetpeople.lightsoo.mymeeting.Handler.BackPressCloseHandler;
-import com.meetpeople.lightsoo.mymeeting.Manager.PropertyManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -81,8 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "내정보 액티비티 만들어서 이동!", Toast.LENGTH_SHORT).show();
             }
         });
-
-
 
         Fragment fragment = null;
 

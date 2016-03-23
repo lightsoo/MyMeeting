@@ -20,13 +20,12 @@ import com.meetpeople.lightsoo.mymeeting.Manager.NetworkManager;
 import com.meetpeople.lightsoo.mymeeting.R;
 import com.meetpeople.lightsoo.mymeeting.RestAPI.MoviesAPI;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit.Call;
+import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
-import retrofit.Callback;
 
 public class MovieActivity extends AppCompatActivity {
 
@@ -97,7 +96,7 @@ public class MovieActivity extends AppCompatActivity {
         director = (EditText)findViewById(R.id.movie_director);
         synopsis = (EditText)findViewById(R.id.movie_synopsis);
         year = (EditText)findViewById(R.id.movie_year);
-
+        //한개의 객체일경우
         tx_title = (TextView)findViewById(R.id.tx_title);
         tx_director = (TextView)findViewById(R.id.tx_director);
         tx_symopsis= (TextView)findViewById(R.id.tx_synopsis);
@@ -126,8 +125,7 @@ public class MovieActivity extends AppCompatActivity {
 
     public void getMovies(){
 
-        moviesItemses = new ArrayList<MoviesItems>();
-
+//        moviesItemses = new ArrayList<MoviesItems>();
         Call<List<Movies>> call = NetworkManager.getInstance()
                 .getAPI(MoviesAPI.class)
                 .get_movies();

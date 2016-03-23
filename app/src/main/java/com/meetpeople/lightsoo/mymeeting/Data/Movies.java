@@ -1,7 +1,6 @@
 package com.meetpeople.lightsoo.mymeeting.Data;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by LG on 2016-02-19.
@@ -40,8 +39,6 @@ public class Movies implements Serializable {
         this.year = year;
         this.synopsis = synopsis;
     }
-
-
 
     //setter
     public void setTitle(String title){
